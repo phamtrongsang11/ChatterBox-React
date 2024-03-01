@@ -27,6 +27,7 @@ import RootLayout from './layouts/RootLayout.tsx';
 import ServerLayout from './layouts/ServerLayout.tsx';
 import ChannelPage from './pages/ChannelPage.tsx';
 import ConversationPage from './pages/ConversationPage.tsx';
+import HomePage from './pages/HomePage.tsx';
 
 const ProtectedRoute = ({ children }: { children: ReactNode }) => {
 	return (
@@ -55,6 +56,7 @@ const RouterComponent = () => {
 							<ProtectedRoute>
 								<ServerJoinModal />
 								<CreateServerModal />
+								<HomePage />
 							</ProtectedRoute>
 						}
 					/>

@@ -12,7 +12,6 @@ loadErrorMessages();
 
 const getToken = (name: string) => {
 	const value = `; ${document.cookie}`;
-	console.log(document.cookie);
 	const parts = value.split(`; ${name}=`);
 	if (parts.length === 2) return parts.pop()?.split(';').shift();
 };
@@ -30,7 +29,7 @@ const authLink = setContext(async (_, { headers }) => {
 //todo:  websocket link
 
 const wsLink = new WebSocketLink({
-	uri: 'ws://localhost:3000/graphql',
+	uri: `${import.meta.env.VITE_APP_WS}/graphql`,
 	options: {
 		connectionParams: () => {
 			const token = getToken('__session');
@@ -45,7 +44,7 @@ const wsLink = new WebSocketLink({
 
 // upload link
 const uploadLink = createUploadLink({
-	uri: 'http://localhost:3000/graphql',
+	uri: `${import.meta.env.VITE_APP_URL}/graphql`,
 	headers: {
 		'apollo-require-preflight': 'true',
 	},
