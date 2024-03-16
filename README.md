@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+# Chatter Box App
+Team Chat is a Discord-based system that allows you to chat and hold meetings with other individuals who have joined your server and channel. The system is developed using JavaScript, HTML, React, and Tailwind for the frontend, while Java, Spring framework and PostgresSQL are utilized for the backend. It include various feature such as:
+- Server, channel and member management
+- Chat with members in channel
+- Chat individuals
+- Voice and video conversation using LiveKit
+- Send file, emoji and more...
+<img src="https://github.com/phamtrongsang11/ChatterBox-NestJS/assets/101312630/d5a68b8c-8527-4e2a-a708-f017d11207d0" width="100%" height="100%">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo (You can access demo by bellow link)
+- https://chatterboxs-react.netlify.app/
+- Code for joining aldready created server: 2a96bb4a-ca0e-47bd-b840-d707c1877126
 
-Currently, two official plugins are available:
+## Geting start
+Backend Repo: https://github.com/phamtrongsang11/ChatterBox-NestJS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To run the app, simply do:
+- clone this repo to your local machine and run
+- clone frontend repo to your local machine and run
